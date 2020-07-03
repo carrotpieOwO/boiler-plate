@@ -39,6 +39,10 @@ mongoose
 //get method
 app.get("/", (req, res) => res.send("Hello World!"));
 
+app.get("/api/hello", (req, res) => {
+  res.send("안녕하세요");
+});
+
 //post method
 //라우트의 end-point를 /register 로
 app.post("/api/users/register", (req, res) => {
